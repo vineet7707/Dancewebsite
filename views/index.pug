@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+       ul
+         #logo 
+           img(src="/static/img/logo.png") 
+           | HDA
+         li #[a(href="/") Home ]
+         li #[a(href="/") About] 
+         li #[a(href="/") Services] 
+         li #[a(href="/") Class info] 
+         li #[a(href="/") Contact Us]
+
+
+    section#introSection 
+      | Welcome to my Dance Acedemy
+
+    section#missionSection 
+          h2 Our Mission 
+          div.card 
+             h3 dance perform
+             div.card-box
+                div.card-img   
+                   img(src="/static/img/1.png")
+                div.card-content
+                      p This is the best dance academy of the universe
+          div.card 
+            h3 this is cool
+            div.card-box
+                div.card-img   
+                   img(src="/static/img/2.png")
+                div.card-content
+                      p This is the best dance academy of the universe
+        
+          div.card 
+              h3 chacha choudhary
+              div.card-box
+                div.card-img   
+                   img(src="/static/img/3.png")
+                div.card-content
+                      p This is the best dance academy of the universe
+
+
+
+    section#sponsorsSection 
+      h2 Our Sponsors 
+      div#sponsors 
+        img(src="/static/img/logo1.png",alt="sponsors img",class="spImage")
+        img(src="/static/img/logo2.png",alt="sponsors img",class="spImage")
+        img(src="/static/img/logo3.png",alt="sponsors img",class="spImage")
+        img(src="/static/img/logo4.png",alt="sponsors img",class="spImage")
+
+    footer#footer 
+     | Copyright  © 2019 Hunterwith.com | All right Reserved     
+
+    script
+      include ../static/index.js
